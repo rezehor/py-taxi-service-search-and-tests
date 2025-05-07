@@ -7,7 +7,7 @@ from taxi.models import Manufacturer, Driver, Car
 
 class SearchFormTests(TestCase):
     def setUp(self):
-        user = get_user_model().objects.create_user(
+        user = Driver.objects.create_user(
             username="test",
             password="test123",
             license_number="ABC12345",

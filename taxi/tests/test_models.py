@@ -42,7 +42,7 @@ class ModelTests(TestCase):
         username = "test"
         password = "test123"
         license_number = "ABC12345"
-        driver = get_user_model().objects.create_user(
+        driver = Driver.objects.create_user(
             username=username,
             password=password,
             license_number=license_number,
